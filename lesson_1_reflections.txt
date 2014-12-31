@@ -1,0 +1,37 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    diff -u file1_old file2_new
+    the changes of the new and the old were compared and the typo mistakes were seen.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    You could possibly have the knowledge of what was intended and how it has been handled by the programmer.
+    The new lines of code could, if they produce some error can be looked into and compared with the stable version
+    which may had been some old version before.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    You can reflect on the changes and fixing you've done on time to time basis. And compare the changes using "git diff commit_ID_1 and commit_ID_2"
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Generally the files being worked on git, have some relationship with each other therefore require changes in one files to affect the others.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    After "git clone <url>" the repository you want to clone in your computer, you can do a "git log" to view all the commits made to the repository. Press arrow key down to view more content. extra: "git log | grep -int revert" int:show the number of lines before and after the line found.
+    Use "git diff commitID1 commitID2" and compare the changes made in them. In the git log view, the top commit is older than the commit below it.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Ypu can make changes to the files you edited and get them to previous state in order to see if the bug is gone or not. This process can help compare with the newer commits and see the lines of codes which might create the bugs.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
